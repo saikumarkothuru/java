@@ -19,8 +19,7 @@ public class FindVowels{
             }
             System.out.println(" No of Vowels = "+ Noofvowels);
             System.out.println(" No of Consonants = " +((A.length())-Noofvowels));
-
-          
-    }
+               S.close();
+             }
 
 }
