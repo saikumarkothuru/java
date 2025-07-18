@@ -2,10 +2,9 @@ import java.util.Scanner;
 public class FindVowels{
     public static void main(String args[]){
         Scanner S=new Scanner(System.in);
-        System.out.print(" Enter the string: ");
+        System.out.print(" Enter a string to find no of vowels and consonants in your input string: ");
         String A=S.nextLine().toLowerCase().replaceAll("\\s","");
         System.out.println(A);
-    
         String Vowels="aeiou";
         int Noofvowels=0;
         for(int i=0;i<Vowels.length();i++)
@@ -16,11 +15,10 @@ public class FindVowels{
                     {
                        Noofvowels++; 
                     }
-                    
                 }
             }
             System.out.println(" No of Vowels = "+ Noofvowels);
-            System.out.println(" No of Consonats = " +(A.length()-Noofvowels));
+            System.out.println(" No of Consonants = " +((A.length())-Noofvowels));
 
           
     }
